@@ -19,9 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const values = {
-  someDate: "*-*-*"
-};
+
 export default function DatePickers() {
   const classes = useStyles();
  
@@ -29,15 +27,15 @@ export default function DatePickers() {
     
     <form className={classes.container} noValidate>
       <TextField
-      name = "someDate"
+     
         id="date"
         label="Date"
-           
+        type="date"
         InputLabelProps={{
           shrink: true,
         }}
-        type="date"
-        defaultValue = {"*.*.*"}
+       
+       
       />
   
     </form>
