@@ -150,7 +150,7 @@ function Load() {
       }
     
       
-      if (day < 1 ||day > 31 || /[^*\d]/g.test(day)) {
+      if (day < 1 ||day > 31 || /[^*?\d]/g.test(day)) {
         alert('Вводить только значения от 1 до 31')
         return false;
       }
