@@ -1,6 +1,6 @@
 # Editor for the crown string
 
-Task: UI for cron string. At this stage, a string is formed with a choice of minutes, hours, days, months and days of the week with the ability to save in cookies and loading the last save.
+Task: User interface for the cron line with saving and loading the selected schedule type and displaying it in the input data, as well as checking the form for the validity of the input data
 
 ## Author
 Nedosekova Ekaterina Andreevna

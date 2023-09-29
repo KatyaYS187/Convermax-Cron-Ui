@@ -1,9 +1,12 @@
 
-export default function SetTime(cookieValue, cookieMin, cookieData, cookieWeekDay){
-    return (
-     document.getElementById('hour').value=cookieValue,
-     document.getElementById('min').value=cookieMin,
-     document.getElementById('date').value=cookieData,
-     document.getElementById('WeekDay').value=cookieWeekDay
+export default function SetTime(min, op1,hour,day,month,weekDay){
+   
+    return (       
+     document.getElementById('min').value=min,
+     document.getElementById('nMin').value=op1,
+     document.getElementById('hour').value=hour,
+     document.getElementById('day').value=day,
+     document.getElementById('month').value=month,    
+     document.getElementById('WeekDay').value=weekDay
     )
-    }
+}

@@ -46,51 +46,37 @@ const currencies = [
 
 
 export default function SelectTextFields() {
-  const [min, setmin] = React.useState('*');
-  const handleMinChange = (event) => {
-    setmin(event.target.value); 
-   
-  };
-  return (
   
-    <Box
-      component="form"
-      sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
-        width: 'fit-content'
-      }}
+  return (
+  <Box
+    component="form"
+    sx={{
+      '& .MuiTextField-root': { m: 1, width: '25ch' },
+       width: 'fit-content'
+    }}
       noValidate
       autoComplete="off"
-    >
-      <div>
-        
-        <TextField
-        
-        
-          id="WeekDay"
-         
-          label="Select WeekDay"
-          value={min}
-          onChange={handleMinChange}
-          select 
-          SelectProps={{
-            native: true,
-          }}
-        
-        >
-
+  >
+    <div>
+      <TextField
+        id="WeekDay"
+        label="Select WeekDay"
+        select
+        SelectProps={{
+          native: true,
+        }}  
+      >
         {currencies.map(option => (
-          <option key={option.value} value={option.value}  >
-            {option.label}
-          </option>
-        ))}
+        <option key={option.value} value={option.value} >
+          {option.label} </option>
+          ))}
         
-        </TextField>
-      
-      </div>
-    </Box>
-
-  )};
+        
+      </TextField>
+       
+    </div>
+  </Box>
+)}
 
 
  
